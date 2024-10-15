@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Message</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            position: relative;
+        }
+
+        h1 {
+            color: #ff4081;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+
+        .heart {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -15px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 15px;
+            top: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .hearts {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+    </style> 
+</head> <head>
+    <title>Your Title</title>
+    <style>
+       body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('images/background.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: Arial, sans-serif; /* Optional font style for text */
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the content box */
+    max-width: 600px; /* Maximum width of the content */
+    margin: auto; /* Center the content horizontally */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+h1 {
+    color: #ff4081; /* Color for the heading */
+}
+
+p {
+    color: #555; /* Color for the paragraph text */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Hey Eli 💖</h1>
+        <div class="hearts">
+            <div class="heart"></div>
+            <div class="heart" style="animation-delay: 0.5s;"></div>
+            <div class="heart" style="animation-delay: 1s;"></div>
+        </div>
+        <p>
+            I hope you're doing well. I’ve been thinking a lot about the past, and I want to sincerely apologize for what happened in grade 7. When my friend told you I had a crush on you, it wasn’t true, and I didn’t mean for it to make things awkward between us. I really regret that it might have caused any confusion or discomfort.
+        </p>
+        <p>
+            It’s been four years since we last saw each other, and I was pleasantly surprised to run into you again on October 4 during Bea’s debut. I found myself secretly looking at you that night and couldn’t help but notice how cute you still are. Seeing you reminded me of how much time has passed and how much I’ve missed the connection we had.
+        </p>
+        <p>
+            I’d love the opportunity to reconnect and talk again. If Bea’s and his brother invite me to another gathering, I hope we can catch up and clear the air. You mean a lot to me, and I’d love to get to know you better.
+        </p>
+        <p>
+            Take care, and I really hope to see you again soon!
+        </p>
+        <p>
+            <br> 
+        
+        </p>
+    </div>
+</body>
+</html>
